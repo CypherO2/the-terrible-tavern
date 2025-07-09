@@ -6,7 +6,7 @@ import {
   MDBCardBody,
   MDBCardImage,
 } from "mdb-react-ui-kit";
-
+import "../css/profile.css";
 import ExperienceCard from "./ExperienceCard.tsx";
 
 export interface Character {
@@ -20,8 +20,9 @@ export interface Character {
 export interface profileProps {
   playerAvatar: string;
   playerName: string;
-  playerRole: string;
+  playerRole: string[];
   playerIntro?: string;
+  playerGradient: string;
   characters: Character[];
 }
 
@@ -30,6 +31,7 @@ export default function ProfileComp({
   playerName,
   playerRole,
   playerIntro,
+  playerGradient,
   characters,
 }: profileProps) {
   return (
@@ -38,8 +40,14 @@ export default function ProfileComp({
         <MDBRow>
           <MDBCol lg="3">
             <MDBCard
-              style={{ backgroundColor: "rgba(10,10,10,0.5)" }}
               className="py-1"
+              style={{
+                backgroundImage: "linear-gradient(" + playerGradient + ")",
+                borderWidth: "5px",
+                borderStyle: "solid",
+                borderColor: "white",
+              }}
+              id=""
             >
               <MDBCardBody className="text-center">
                 <MDBCardImage
@@ -50,9 +58,39 @@ export default function ProfileComp({
                   fluid
                 />
                 <h4 className="text-light mb-1 fw-bold">{playerName}</h4>
-                <p className="fs-6 text-light mb-4">{playerRole}</p>
+                {(playerRole[1] == undefined && (
+                  <div
+                    style={{
+                      backgroundColor: "rgba(10,10,10,0.5)",
+                      borderRadius: "15px",
+                    }}
+                    className=""
+                  >
+                    <p className="fs-6 text-light mb-4">{playerRole[0]}</p>
+                  </div>
+                )) || (
+                  <div
+                    style={{
+                      backgroundColor: "rgba(10,10,10,0.5)",
+                      borderRadius: "15px",
+                    }}
+                    className=""
+                  >
+                    <p className="fs-6 text-light mb-4">
+                      {playerRole[0] + " / " + playerRole[1]}
+                    </p>
+                  </div>
+                )}
                 {playerIntro && playerIntro.length > 0 && (
-                  <p className="text-light mb-4">{playerIntro}</p>
+                  <div
+                    style={{
+                      backgroundColor: "rgba(10,10,10,0.5)",
+                      borderRadius: "15px",
+                    }}
+                    className=""
+                  >
+                    <p className="text-light mb-4 p-2">{playerIntro}</p>
+                  </div>
                 )}
               </MDBCardBody>
             </MDBCard>
