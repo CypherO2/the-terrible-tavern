@@ -139,7 +139,7 @@ const PLAYER_INFO = [
     playerName: "Deva / Argo",
     playerIntro: "",
     playerRole: ["DM", "Player"],
-    playerGradient: "rgba(0,0,0), rgba(255,255,255)",
+    playerGradient: "rgba(128, 42, 151), rgba(255,0,0)",
     playerCharacters: DEVA_CHARACTERS,
   },
   {
