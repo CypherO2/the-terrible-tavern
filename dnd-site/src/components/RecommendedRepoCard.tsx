@@ -20,7 +20,7 @@ export default function RecRepoCard({
   repoButtonText,
 }: RecRepoProps) {
   return (
-    <MDBContainer className="text-light my-4 h-100">
+    <MDBContainer className="text-light py-3 h-100">
       <MDBCard
         className="text-white"
         style={{ backgroundColor: "rgba(10,10,10,0.5)" }}
@@ -28,13 +28,13 @@ export default function RecRepoCard({
         <MDBContainer className="px-5 py-1">
           {repoTitle && repoTitle.length > 0 && (
             <MDBCardTitle
-              className="fw-bold fs-2 py-4 mb-3 border-bottom"
+              className="fw-bold fs-2 pt-4"
               style={{ fontFamily: "Verdana" }}
             >
               {repoTitle}
             </MDBCardTitle>
           )}
-          <MDBCardText className="fs-4 py-4">{repoDesc}</MDBCardText>
+          <MDBCardText className="fs-4 py-3 mb-1">{repoDesc}</MDBCardText>
           {repoLink && repoLink.length > 0 && (
             <a
               className="btn btn-outline-purple btn-lg m-1 fw-bold my-auto"

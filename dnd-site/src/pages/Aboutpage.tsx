@@ -13,7 +13,7 @@ import {
   DIO_CHARACTERS,
   ELO_CHARACTERS,
   INTRODUCTIONS,
-  JAY_CHARACTERS,
+  JAIDEN_CHARACTERS,
   NEO_CHARACTERS,
   RACC_CHARACTERS,
 } from "../constants/characters";
@@ -44,8 +44,8 @@ export default function Aboutpage() {
             playerAvatar={JayAvatar}
             playerName="Jay"
             playerRole="DM & Player"
-            playerIntro={INTRODUCTIONS.Jay} // Added playerIntro prop
-            characters={JAY_CHARACTERS} // Updated to use the correct characters constant
+            playerIntro={INTRODUCTIONS.Jaiden} // Added playerIntro prop
+            characters={JAIDEN_CHARACTERS} // Updated to use the correct characters constant
           />
           <ProfileComp
             playerAvatar={CJAvatar}

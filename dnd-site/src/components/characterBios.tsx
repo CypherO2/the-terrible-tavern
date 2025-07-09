@@ -23,7 +23,7 @@ export default function CharacterBios({
         >
           <MDBContainer className="px-5 py-1">
             <MDBCardTitle
-              className="fw-bold fs-2 py-4 mb-3 border-bottom"
+              className="fw-bold fs-2 pt-4"
               style={{ fontFamily: "Verdana" }}
             >
               {titleText || "Placeholder Title"}

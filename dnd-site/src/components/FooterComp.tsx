@@ -5,7 +5,7 @@ export default function FootComp() {
   return (
     <>
       <MDBFooter
-        className="text-center text-white"
+        className="text-center text-white mt-5"
         style={{ backgroundColor: "rgba(68, 43, 10, 0)" }}
       >
         <MDBContainer className="pt-4">

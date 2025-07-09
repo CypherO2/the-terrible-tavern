@@ -9,7 +9,7 @@ const CJ_CHARACTERS = [
     campaignLink: "#" + NEXORIA_PATH,
   },
 ];
-const JAY_CHARACTERS = [
+const JAIDEN_CHARACTERS = [
   {
     name: "Abbot Cedrick/Dlysss Crrrth",
     role: "Bard",
@@ -87,7 +87,8 @@ const DIO_CHARACTERS = [
 
 const INTRODUCTIONS = {
   CJ: "CJ, also known as Cassiopeia, is the Dungeon Master and a player in the campaigns, bringing creativity and depth to the game.",
-  Jay: "Jay is both a Dungeon Master and a player, known for their engaging storytelling and character development.",
+  Jaiden:
+    "Jay is both a Dungeon Master and a player, known for their engaging storytelling and character development.",
   Neo: "Neo is a player in the Nexoria campaign, known for their strategic thinking and creativity.",
   Racc: "Racc, or Raccoon, is a versatile player who also takes on the role of Dungeon Master in various campaigns.",
   Elo: "Elo, or Eloediel, is a dedicated player who brings unique characters to life in the Nexoria campaign.",
@@ -97,7 +98,7 @@ const INTRODUCTIONS = {
 
 export {
   CJ_CHARACTERS,
-  JAY_CHARACTERS,
+  JAIDEN_CHARACTERS,
   NEO_CHARACTERS,
   RACC_CHARACTERS,
   ELO_CHARACTERS,

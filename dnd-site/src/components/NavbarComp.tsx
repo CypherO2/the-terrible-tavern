@@ -76,7 +76,7 @@ export default function NavComp() {
                       className="nav-link text-light"
                       role="button"
                     >
-                      On-Going
+                      Campaigns
                     </MDBDropdownToggle>
                     <MDBDropdownMenu
                       style={{ backgroundColor: "rgba(10, 10, 10, 0.5)" }}

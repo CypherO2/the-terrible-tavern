@@ -5,6 +5,7 @@ import RecRepoCard from "../../components/RecommendedRepoCard";
 import DSDarklessBanner from "../../assets/Darkless.png";
 import { DARKLESS_OVERVIEW } from "../../constants/campaign-overviews";
 import CharacterBios from "../../components/characterBios";
+import LatestEpisode from "../../components/latestEpisode";
 
 export default function DSDarklessPage() {
   useEffect(() => {
@@ -14,18 +15,16 @@ export default function DSDarklessPage() {
     <>
       <Container className="my-5">
         <MainBanner titleText={DSDarklessBanner} />
-        <RecRepoCard repoDesc="" />
+        <RecRepoCard repoDesc="*A new episode every other XXXDay" />
         <RecRepoCard
           repoTitle="Campaign Overview"
           repoDesc={DARKLESS_OVERVIEW.desc}
         />
         <Row>
-          <Col>
-            <CharacterBios />
-          </Col>
-          <Col>
-            <CharacterBios />
-          </Col>
+          <LatestEpisode
+            compTitle="Dark Souls : Age of the Darkless"
+            episodeLink="https://open.spotify.com/embed/episode/"
+          />
         </Row>
       </Container>
     </>

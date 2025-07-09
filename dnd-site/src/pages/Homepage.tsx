@@ -1,10 +1,12 @@
 import { MDBContainer } from "mdb-react-ui-kit";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { useEffect } from "react";
 import MainBanner from "../components/BannerComp";
 // import QuoteComp from "../components/QuoteComp";
 import GroupTitle from "../assets/Group_Title.png";
 import RecRepoCard from "../components/RecommendedRepoCard";
+import LatestEpisode from "../components/latestEpisode";
+import QuoteComp from "../components/QuoteComp";
 
 export default function Homepage() {
   useEffect(() => {
@@ -16,10 +18,19 @@ export default function Homepage() {
       <MDBContainer>
         <Row>
           <RecRepoCard
-            repoTitle="What is the Terrible Tavern?"
-            repoDesc="The Terrible Tavern is a group of friends who play Dungeons and Dragons together. We rotate between campaigns and GMs, and we would love to share our many adventures with the world - like a story told by weary adventurers over a pint of aged Ale. Join us as we explore the many worlds, locales and face foes great and many. We hope you enjoy our stories as much as we do."
+            repoTitle="Welcome to The Terrible Tavern!"
+            repoDesc="A TTRPG podcast like no other! A wild crew of mostly Forever GMs finally gets out from behind the screen and into the player seat, taking turns crafting campaigns across systems like D&D 5E, Candela Obscura, Daggerheart, Call of Cthulhu, and more. But the fun doesn’t stop at the table—expect post-session talks, Reddit reads, gaming streams, and wild side quests. Join us as we tell the stories we’ve been waiting to share. Pull up a chair and give us a shot at your next favorite listen!"
           />
         </Row>
+        <Row>
+          <LatestEpisode
+            compTitle="Nexoria : Age of Return"
+            episodeLink="https://open.spotify.com/embed/episode/"
+          />
+        </Row>
+        {/* <Row>
+          <QuoteComp quoteText="The Terrible Tavern is an amazing Podcast" quoteAuthor="Anon #1" />
+        </Row> */}
       </MDBContainer>
     </>
   );

@@ -5,6 +5,7 @@ import NexoriaBanner from "../../assets/Nexoria.png";
 import RecRepoCard from "../../components/RecommendedRepoCard";
 import { NEXORIA_OVERVIEW } from "../../constants/campaign-overviews";
 import CharacterBios from "../../components/characterBios";
+import LatestEpisode from "../../components/latestEpisode";
 
 export default function NexoriaPage() {
   useEffect(() => {
@@ -20,12 +21,10 @@ export default function NexoriaPage() {
           repoDesc={NEXORIA_OVERVIEW.desc}
         />
         <Row>
-          <Col>
-            <CharacterBios />
-          </Col>
-          <Col>
-            <CharacterBios />
-          </Col>
+          <LatestEpisode
+            compTitle="Nexoria : Age of Return"
+            episodeLink="https://open.spotify.com/embed/episode/"
+          />
         </Row>
       </Container>
     </>

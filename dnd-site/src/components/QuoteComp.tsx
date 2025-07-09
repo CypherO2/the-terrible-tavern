@@ -13,12 +13,12 @@ export interface QuoteCompProps {
 
 export default function QuoteComp({ quoteText, quoteAuthor }: QuoteCompProps) {
   return (
-    <MDBContainer className="py-5 h-100">
+    <MDBContainer className="py-3 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="6" xl="12">
           <MDBCard
             className="text-white py-auto"
-            style={{ height: "20rem", backgroundColor: "rgba(10,10,10,0.75)" }}
+            style={{ height: "20rem", backgroundColor: "rgba(10,10,10,0.5)" }}
           >
             <MDBCardBody className="d-flex align-items-baseline m-auto">
               <h2
@@ -26,14 +26,14 @@ export default function QuoteComp({ quoteText, quoteAuthor }: QuoteCompProps) {
                 className="fw-bold text-center d-block m-auto py-auto"
               >
                 <span
-                  style={{ color: "rgb(130, 5, 130)" }}
+                  style={{ color: "rgb(116, 46, 9)" }}
                   className="fw-bold fs-1"
                 >
                   "
                 </span>
                 {quoteText}
                 <span
-                  style={{ color: "rgb(130, 5, 130)" }}
+                  style={{ color: "rgb(116, 46, 9)" }}
                   className="fw-bold fs-1"
                 >
                   "
