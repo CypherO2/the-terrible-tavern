@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import MainBanner from "../../components/BannerComp";
 import NexoriaBanner from "../../assets/Nexoria.png";
 import RecRepoCard from "../../components/RecommendedRepoCard";
 import { NEXORIA_OVERVIEW } from "../../constants/campaign-overviews";
-import CharacterBios from "../../components/characterBios";
+
 import LatestEpisode from "../../components/latestEpisode";
 
 export default function NexoriaPage() {

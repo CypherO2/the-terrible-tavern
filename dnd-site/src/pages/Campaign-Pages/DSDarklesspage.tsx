@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 import MainBanner from "../../components/BannerComp";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import RecRepoCard from "../../components/RecommendedRepoCard";
 import DSDarklessBanner from "../../assets/Darkless.png";
 import { DARKLESS_OVERVIEW } from "../../constants/campaign-overviews";
-import CharacterBios from "../../components/characterBios";
 import LatestEpisode from "../../components/latestEpisode";
 
 export default function DSDarklessPage() {

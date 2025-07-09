@@ -1,12 +1,11 @@
 import { MDBContainer } from "mdb-react-ui-kit";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { useEffect } from "react";
 import MainBanner from "../components/BannerComp";
 // import QuoteComp from "../components/QuoteComp";
 import GroupTitle from "../assets/Group_Title.png";
 import RecRepoCard from "../components/RecommendedRepoCard";
 import LatestEpisode from "../components/latestEpisode";
-import QuoteComp from "../components/QuoteComp";
 
 export default function Homepage() {
   useEffect(() => {
