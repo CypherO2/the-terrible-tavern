@@ -1,8 +1,6 @@
-import { MDBContainer } from "mdb-react-ui-kit";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { useEffect } from "react";
 import MainBanner from "../components/BannerComp";
-// import QuoteComp from "../components/QuoteComp";
 import GroupTitle from "../assets/Group_Title.png";
 import RecRepoCard from "../components/RecommendedRepoCard";
 import LatestEpisode from "../components/latestEpisode";
@@ -14,7 +12,7 @@ export default function Homepage() {
   return (
     <>
       <MainBanner titleText={GroupTitle} />
-      <MDBContainer>
+      <Container>
         <Row>
           <RecRepoCard
             repoTitle="Welcome to The Terrible Tavern!"
@@ -30,7 +28,7 @@ export default function Homepage() {
         {/* <Row>
           <QuoteComp quoteText="The Terrible Tavern is an amazing Podcast" quoteAuthor="Anon #1" />
         </Row> */}
-      </MDBContainer>
+      </Container>
     </>
   );
 }

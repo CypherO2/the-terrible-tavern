@@ -25,19 +25,17 @@ export default function MainBanner({
       <div className="mask pb-2">
         <div className="d-flex justify-content-center align-items-center h-100">
           <div className="text-white ">
-            {/* <h1 className="mb-3 fw-bold" style={{ fontFamily: "Verdana", fontSize: "3.5rem" }}>
-              {titleText}
-            </h1> */}
             <img
               src={titleText}
               alt={titleText}
               className="m-5"
               style={{ width: "80%" }}
             />
-            <h4 className="mb-3 fw-bold" style={{ fontFamily: "monospace" }}>
-              {subtitleText}
-            </h4>
-            {/* {firstButtonText && firstButtonText.length > 0 && (<a>test</a>)} */}
+            {subtitleText && subtitleText.length > 0 && (
+              <h4 className="mb-3 fw-bold" style={{ fontFamily: "monospace" }}>
+                {subtitleText}
+              </h4>
+            )}
             {firstButtonText && firstButtonText.length > 0 && (
               <a
                 className="btn btn-outline-light btn-lg m-1 fw-bold"

@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
+import GroupTitle from "../assets/Group_Title.png";
+import MainBanner from "../components/BannerComp";
 
 export default function UnknownPage() {
   useEffect(() => {
@@ -6,7 +9,15 @@ export default function UnknownPage() {
   });
   return (
     <>
-      <h1>Unknown</h1>
+      <MainBanner titleText={GroupTitle} />
+      <Container>
+        <Row>
+          <h1 className="text-white fw-bold text-center pt-2">Error 404:</h1>
+          <h3 className="text-white fw-bold text-center pb-2">
+            Page Not Found
+          </h3>
+        </Row>
+      </Container>
     </>
   );
 }

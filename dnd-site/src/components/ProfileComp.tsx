@@ -43,9 +43,12 @@ export default function ProfileComp({
               className="py-1"
               style={{
                 backgroundImage: "linear-gradient(" + playerGradient + ")",
-                borderWidth: "5px",
+                borderWidth: "4px",
                 borderStyle: "solid",
-                borderColor: "white",
+                borderRadius: "10px",
+                border: "4px solid transparent",
+                background:
+                  "linear-gradient(" + playerGradient + ") border-box",
               }}
               id=""
             >

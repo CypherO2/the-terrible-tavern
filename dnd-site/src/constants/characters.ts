@@ -98,7 +98,7 @@ const PLAYER_INFO = [
       "CJ, also known as Cassiopeia, is the Dungeon Master and a player in the campaigns, bringing creativity and depth to the game.",
     playerRole: ["DM", "Player"],
     playerGradient:
-      "to bottom left, rgba(0,0,0), rgba(190, 37, 170), rgba(0,0,0)",
+      "to bottom left, rgba(0,0,0,0.5), rgba(190, 37, 170,0.5), rgba(0,0,0,0.5)",
     playerCharacters: CJ_CHARACTERS,
   },
   {
@@ -107,7 +107,7 @@ const PLAYER_INFO = [
     playerIntro:
       "Jaiden is a 20-year-old Forever DM who lives for storytelling—whether weaving high fantasy epics or exploring gritty urban fantasy. Usually behind the screen crafting deep, dramatic tales, they seize every chance to play. For Jaiden, the best stories challenge the world as much as they enchant it.",
     playerRole: ["DM", "Player"],
-    playerGradient: "rgba(0,0,0), rgba(22, 166, 195), rgba(0,0,0)",
+    playerGradient: "rgba(0,0,0,0.5), rgba(22, 166, 195,0.5), rgba(0,0,0,0.5)",
     playerCharacters: JAIDEN_CHARACTERS,
   },
   {
@@ -115,7 +115,7 @@ const PLAYER_INFO = [
     playerName: "Neo",
     playerIntro: "",
     playerRole: ["Player"],
-    playerGradient: "rgba(0,0,0), rgba(255,255,255)",
+    playerGradient: "rgba(0, 0, 0, 0.5), rgba(255,255,255,0.5)",
     playerCharacters: NEO_CHARACTERS,
   },
   {
@@ -123,7 +123,7 @@ const PLAYER_INFO = [
     playerName: "Racc / Raccoon",
     playerIntro: "",
     playerRole: ["DM", "Player"],
-    playerGradient: "rgba(0,0,0), rgba(255,255,255)",
+    playerGradient: "rgba(30, 216, 132, 0.5), rgba(148, 38, 221, 0.5)",
     playerCharacters: RACC_CHARACTERS,
   },
   {
@@ -131,7 +131,7 @@ const PLAYER_INFO = [
     playerName: "Elo / Eloediel",
     playerIntro: "",
     playerRole: ["Player"],
-    playerGradient: "rgba(0,0,0), rgba(255,255,255)",
+    playerGradient: "rgba(0, 0, 0, 0.5), rgba(255,255,255,0.5)",
     playerCharacters: ELO_CHARACTERS,
   },
   {
@@ -139,7 +139,7 @@ const PLAYER_INFO = [
     playerName: "Deva / Argo",
     playerIntro: "",
     playerRole: ["DM", "Player"],
-    playerGradient: "rgba(128, 42, 151), rgba(255,0,0)",
+    playerGradient: "rgba(128, 42, 151,0.5), rgba(255,0,0,0.5)",
     playerCharacters: DEVA_CHARACTERS,
   },
   {
@@ -147,7 +147,7 @@ const PLAYER_INFO = [
     playerName: "Dio",
     playerIntro: "",
     playerRole: ["DM", "Player"],
-    playerGradient: "rgba(0,0,0), rgba(255,255,255)",
+    playerGradient: "rgba(0,0,0,0.5), rgba(255,255,255,0.5)",
     playerCharacters: DIO_CHARACTERS,
   },
 ];
